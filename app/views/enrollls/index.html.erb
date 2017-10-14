@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Enrollls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Student</th>
+      <th>Course</th>
+      <th>Percentage</th>
+      <th>Lettergrade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @enrollls.each do |enrolll| %>
+      <tr>
+        <td><%= enrolll.student_id %></td>
+        <td><%= enrolll.course_id %></td>
+        <td><%= enrolll.percentage %></td>
+        <td><%= enrolll.lettergrade %></td>
+        <td><%= link_to 'Show', enrolll %></td>
+        <td><%= link_to 'Edit', edit_enrolll_path(enrolll) %></td>
+        <td><%= link_to 'Destroy', enrolll, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Enrolll', new_enrolll_path %>

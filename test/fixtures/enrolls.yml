@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  studentId: 1
+  course_Id: MyString
+  Percentage: MyString
+  lettergrade: MyString
+
+two:
+  studentId: 1
+  course_Id: MyString
+  Percentage: MyString
+  lettergrade: MyString
