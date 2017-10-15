@@ -5,11 +5,19 @@ class CourseesController < ApplicationController
   # GET /coursees.json
   def index
     @coursees = Coursee.all
+
+
   end
 
   # GET /coursees/1
   # GET /coursees/1.json
   def show
+    @courseess= Coursee
+                        .joins('JOIN "enrollls" ON "coursees"."course_id" = "enrollls"."course_id"' )
+                       .select("enrollls.student_id, enrollls.percentage, enrollls.lettergrade")
+                       .where(:coursees => {:id => params[:id]})
+
+
   end
 
   # GET /coursees/new

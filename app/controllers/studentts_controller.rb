@@ -4,8 +4,20 @@ class StudenttsController < ApplicationController
   # GET /studentts
   # GET /studentts.json
   def index
-    @studentts = Studentt.all
+    # @studentts = Studentt.all
+   @studentts =   Studentt.joins('JOIN "enrollls" ON "studentts"."student_id" = "enrollls"."student_id"')
+                          .joins('JOIN "coursees" ON "coursees"."course_id" = "enrollls"."course_id"')
+                          .select("studentts.*, enrollls.course_id, coursees.description")
+  #  @countt_name = Studentt.group(:name).count
+  #  @studentts =   Studentt.find(2, 3)
+
+    @name = []
+    @studentts.each do |u|
+      @name<<u.student_id
+    end
+
   end
+
 
   # GET /studentts/1
   # GET /studentts/1.json
