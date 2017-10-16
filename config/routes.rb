@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :histograms
   resources :coursees
   resources :enrollls
   resources :studentts
@@ -14,7 +15,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
-  root 'welcome#index'
+  root 'histograms#index'
   # root 'studentts#index'
 
   # Example of regular route:

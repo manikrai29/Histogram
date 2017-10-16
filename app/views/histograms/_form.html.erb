@@ -1,0 +1,21 @@
+<%= form_for(@histogram) do |f| %>
+  <% if @histogram.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@histogram.errors.count, "error") %> prohibited this histogram from being saved:</h2>
+
+      <ul>
+      <% @histogram.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bound %><br>
+    <%= f.number_field :bound %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

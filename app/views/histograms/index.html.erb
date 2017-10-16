@@ -1,0 +1,366 @@
+<!-- <p id="notice"><%= notice %></p>
+
+<h1>Listing Histograms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bound</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @histograms.each do |histogram| %>
+      <tr>
+        <td><%= histogram.bound %></td>
+        <td><%= link_to 'Show', histogram %></td>
+        <td><%= link_to 'Edit', edit_histogram_path(histogram) %></td>
+        <td><%= link_to 'Destroy', histogram, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Histogram', new_histogram_path %> -->
+<h2>IMPORTANT LINKS</h2>
+ <b><a href="studentts#index">STUDENT DATABASE</a><br><br>
+ <a href="coursees#index">COURSES DATABASE</a><br><br>
+ <a href="enrollls#index">ENROLLMENT DATABASE</a><br><br></b>
+
+
+<h2>Histogram Generator</h2><br><br>
+
+
+
+
+<div>
+  <table style="float: left" ><tr>
+      <td width=15%> <font color = white>hey</color></td></tr>
+    </table>
+
+      <table  style="float: left ; background-color:#CCCCFF" frame = "box"  >
+        <tr>
+      <td colspan=4 align=left height = 30>
+
+              <h4><font color=#CCCCFF>aaa</font><font color=red bold>Lower Bounds
+        </tr>
+                      <tr>
+                    <td width=50 ></td>
+                    <td width=10 height = 50><p>Max</td>
+                      <td>
+
+
+                            <input id="numb" value="100">
+
+
+
+
+                        </td>
+                        <td width=100></td>
+                      </tr>
+                      <tr>
+                    <td width=50></td>
+                    <td width=10><p>A+</td>
+                        <td height = 50>
+                            <input id="l_a_1" value="95">
+                        </td>
+                        <td width=80></td>
+                      </tr>
+                      <tr>
+                    <td width=50></td>
+                          <td width=10><p>A</td>
+                          <td height = 50>
+                          <input id="L_a_2" value="90">
+                        </td>
+                        <td width=80></td>
+                      </tr>
+                      <tr>
+                    <td width=50></td>
+                        <td width=10><p>A-</td>
+                          <td height = 50>
+                          <input id="L_a_3" value="85">
+                        </td>
+                        <td width=80></td>
+                      </tr>
+                      <tr>
+                    <td width=50></td>
+                          <td width=10><p>B+</td>
+                          <td height = 50>
+                          <input id="L_b_1" value="80">
+                        </td>
+                        <td width=80></td>
+                      </tr>
+                      <tr>
+                    <td width=50></td>
+                        <td width=10><p>B</td>
+                          <td height = 50>
+                          <input id="L_b_2" value="75">
+                        </td>
+                        <td width=80></td>
+                      </tr>
+                      <tr>
+                    <td width=50></td>
+                        <td width=10><p>B-</td>
+                          <td height = 50>
+                          <input id="L_b_3" value="70">
+                        </td>
+                        <td width=80></td>
+                      </tr>
+                      <tr>
+                    <td width=50></td>
+                      <td width=10><p>C+</td>
+                        <td height = 50>
+                          <input id="L_c_1" value="65">
+                        </td>
+                        <td width=80></td>
+                      </tr>
+                      <tr>
+                    <td width=50></td>
+                      <td width=10><p>C</td>
+                        <td height = 50>
+                          <input id="L_c_2" value="60">
+                        </td>
+                        <td width=80></td>
+                      </tr>
+                      <tr>
+                    <td width=50></td>
+                      <td width=10><p>C-</td>
+                      <td height = 50>
+                          <input id="L_c_3" value="55">
+                        </td>
+                        <td width=80></td>
+                      </tr>
+                      <tr>
+                    <td width=50></td>
+                      <td width=10><p>D</td>
+                        <td height = 50>
+                          <input id="L_d" value="50">
+                        </td>
+                        <td width=80></td>
+                      </tr>
+                      <tr>
+                    <td width=50></td>
+                    <td width=100><p>F</p></td>
+                          <td height = 50>
+                          <input id="L_f" value="0">
+                        </td>
+                        <td width=80></td>
+                      </tr>
+                      <tr>
+                    <td colspan=4 align=center height=80>
+
+
+                    <a href='coursees#index'>  <button type="button" onclick="myFunction()">Submit</button></a>
+
+                          </div>
+                            </td>
+                      </tr>
+
+      </table>
+  <table style="float: left" ><tr>
+            <td width=15%> <font color = white>hey</color></td></tr>
+    </table>
+  <table    style="float: left ; background-color:#CCCCFF" frame = "box" >
+    <tr>
+  <td colspan=4 align=left height = 30>
+
+          <h4><font color=#CCCCFF>aa</font><font color=red bold>Histogram
+    </tr>
+              <tr>
+                <td width=50></td>
+                    <td WIDTH=80 ><p>A+</p>
+                    </td>
+                    <td height=30><p id="A+" align=center > 1</p>
+                    </td>
+                    <td width=100></td>
+              </tr>
+              <tr>
+                    <td width=50></td>
+                    <td WIDTH=80><p>A</p>
+                    </td>
+                    <td height=30><p id="A" align=center > 3</p>
+                    </td>
+                    <td width=100></td>
+              </tr>
+              <tr>
+                    <td width=50></td>
+                    <td WIDTH=80><p>A-</p>
+                    </td>
+                    <td height=30><p id="A-" align=center > 3</p>
+                    </td>
+                    <td width=100></td>
+              </tr>
+              <tr>
+                    <td width=50></td>
+                    <td WIDTH=80><p>B+</p>
+                    </td>
+                    <td height=30><p id="B+" align=center > 2</p>
+                    </td>
+                    <td width=100></td>
+              </tr>
+              <tr>
+                    <td width=50></td>
+                    <td WIDTH=80><p>B</p>
+                    </td>
+                    <td height=30><p id="B" align=center > 1</p>
+                    </td>
+                    <td width=100></td>
+              </tr>
+              <tr>
+                    <td width=50></td>
+                    <td WIDTH=80><p>B-</p>
+                    </td>
+                    <td height=30><p id="B-" align=center > 4</p>
+                    </td>
+                    <td width=100></td>
+              </tr>
+              <tr>
+                    <td width=50></td>
+                    <td WIDTH=80><p>C+</p>
+                    </td>
+                    <td height=30><p id="C+" align=center > 1</p>
+                    </td>
+                    <td width=100></td>
+              </tr>
+              <tr>
+                    <td width=50></td>
+                    <td WIDTH=80><p>C</p>
+                    </td>
+                    <td height=30><p id="C" align=center > 2</p>
+                    </td>
+                    <td width=100></td>
+              </tr>
+              <tr>
+                    <td width=50></td>
+                    <td WIDTH=80><p>C-</p>
+                    </td>
+                    <td height=30><p id="C-" align=center > 3</p>
+                    </td>
+                    <td width=100></td>
+              </tr>
+              <tr>
+                <td width=50></td>
+                    <td WIDTH=80><p>D</p>
+                    </td>
+                    <td height=30><p id="D" align=center > 3</p>
+                    </td>
+                    <td width=100></td>
+              </tr>
+              <tr>
+                <td width=50></td>
+                    <td WIDTH=80><p>F</p>
+                    </td>
+                    <td height=30><p id="F" align=center > 2</p>
+                    </td>
+                    <td width=100></td>
+              </tr>
+
+  </table>
+
+</div>
+
+
+
+<script>
+function myFunction() {
+    var x=100, text,i,a_1=0,a_2=0,a_3=0,b_1=0,b_2=0,b_3=0,c_1=0,c_2=0,c_3=0,d=0,f=0;
+    var l_a_1=95,l_a_2=90,l_a_3=85,l_b_1=80,l_b_2=75,l_b_3=70,l_c_1=65,l_c_2=60, l_c_3=55, l_d=50,l_f=0;
+    var grades = [65.95 , 56.98 , 78.62 , 96.1, 90.3 , 72.24, 92.34, 60.00, 81.43, 86.22, 88.33,9.03,49.93, 52.34, 53.11, 50.10
+, 88.88 , 55.32, 55.69, 61.68,70.44, 70.54 ,90.0, 71.11, 80.01];
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    l_a_1 = document.getElementById("l_a_1").value;
+    l_a_2 = document.getElementById("L_a_2").value;
+    l_a_3 = document.getElementById("L_a_3").value;
+    l_b_1 = document.getElementById("L_b_1").value;
+    l_b_2 = document.getElementById("L_b_2").value;
+    l_b_3 = document.getElementById("L_b_3").value;
+    l_c_1 = document.getElementById("L_c_1").value;
+    l_c_2 = document.getElementById("L_c_2").value;
+    l_c_3 = document.getElementById("L_c_3").value;
+    l_d = document.getElementById("L_d").value;
+    l_f = document.getElementById("L_f").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 0 || x > 100 ||
+    isNaN(l_a_1) || l_a_1 < 0 || l_a_1 > 100||
+        isNaN(l_a_2) || l_a_2 < 0 || l_a_2 > 100||
+        isNaN(l_a_3) || l_a_3 < 0 || l_a_3 > 100||
+        isNaN(l_b_1) || l_b_1 < 0 || l_b_1 > 100||
+        isNaN(l_b_2) || l_b_2 < 0 || l_b_2 > 100||
+        isNaN(l_b_3) || l_b_3 < 0 || l_b_3 > 100||
+        isNaN(l_c_1) || l_c_1 < 0 || l_c_1 > 100||
+        isNaN(l_c_2) || l_c_2 < 0 || l_c_2 > 100||
+        isNaN(l_c_3) || l_c_3 < 0 || l_c_3 > 100||
+        isNaN(l_d) || l_d < 0 || l_d > 100||
+        isNaN(l_f) || l_f < 0 || l_f > 100 ||
+
+          l_a_1<=l_a_2 || l_a_2<=l_a_3 ||
+          l_a_3<=l_b_1 || l_b_1<=l_b_2 || l_b_2<=l_b_3 ||
+         l_b_3<=l_c_1 || l_c_1<=l_c_2 || l_c_2<=l_c_3 ||
+       l_c_3<=l_d || l_d<=l_f
+
+
+
+
+
+
+
+
+
+
+
+  ) {   //if (isNaN(x) || x  1 || x < 101)
+        alert("Please enter a valid bounds");
+    } else {
+       for( i=0; i<grades.length; i++){
+         if( grades[i] <= x && grades[i]>= l_a_1){
+           a_1++;
+         }
+         if(grades[i] < l_a_1 && grades[i]>= l_a_2){
+           a_2++;
+         }
+         if(grades[i] < l_a_2 && grades[i]>= l_a_3){
+           a_3++;
+         }if(grades[i] < l_a_3 && grades[i]>= l_b_1){
+           b_1++;
+         }if(grades[i] < l_b_1 && grades[i]>= l_b_2){
+           b_2++;
+         }if(grades[i] < l_b_2 && grades[i]>= l_b_3){
+           b_3++;
+         }if(grades[i] < l_b_3 && grades[i]>= l_c_1){
+           c_1++;
+         }if(grades[i] < l_c_1 && grades[i]>= l_c_2){
+           c_2++;
+         }if(grades[i] < l_c_2 && grades[i]>= l_c_3){
+           c_3++;
+         }if(grades[i] < l_c_3 && grades[i]>= l_d){
+           d++;
+         }if(grades[i] < l_d && grades[i]>= l_f){
+           f++;
+         }
+    }
+
+
+  }
+    document.getElementById("A+").innerHTML = a_1;
+    document.getElementById("A").innerHTML = a_2;
+    document.getElementById("A-").innerHTML = a_3;
+    document.getElementById("B+").innerHTML = b_1;
+    document.getElementById("B").innerHTML = b_2;
+    document.getElementById("B-").innerHTML = b_3;
+    document.getElementById("C+").innerHTML = c_1;
+    document.getElementById("C").innerHTML = c_2;
+    document.getElementById("C-").innerHTML = c_3;
+    document.getElementById("D").innerHTML = d;
+    document.getElementById("F").innerHTML = f;
+
+
+
+}
+</script>
