@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
-  root 'histograms#index'
+  root 'coursees#index'
   # root 'studentts#index'
 
   # Example of regular route:
